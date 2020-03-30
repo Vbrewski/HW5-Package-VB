@@ -51,6 +51,3 @@ RDistribution <-  function(x, n, mean = 0, sd = 1, df = n - 2, dfn = 2, dfd = n 
   }
 }
 
-RDistribution("normal",2 )
-
-

@@ -1,7 +1,7 @@
 #' Function 2
 #'
 #' Generates histograms for random samples from 4 different distributions
-#' @param dname name of the distribution (normal, t, F, Binomial)
+#' @param x name of the distribution (normal, t, F, Binomial)
 #' @param n number of samples
 #' @param mean vector of means for normal distribution
 #' @param sd vector of standard deviations for normal distribution
@@ -31,7 +31,7 @@
 #'
 #' @examples
 #'
-RDistributionPlot <- function(x, n, mean = 0, sd = 1, df = n - 2, dfn = 2, dfd = n - 2, size = 10, p = .1, seed = FALSE, bins = 10) {
+RDistributionPlot <- function(x, n, mean = 0, sd = 1, df = n - 2, dfn = 2, dfd = n - 2, size = 10, p = .1, seed = FALSE, bins = 15) {
   if (n %% 1 == 0) {
     if ((x == "Normal") | (x == "normal")) {
       out <- rnorm(n, mean, sd)
@@ -63,4 +63,3 @@ RDistributionPlot <- function(x, n, mean = 0, sd = 1, df = n - 2, dfn = 2, dfd =
   }
 }
 
-RDistributionPlot("normal",4,2)
