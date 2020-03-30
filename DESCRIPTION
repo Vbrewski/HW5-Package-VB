@@ -2,8 +2,8 @@ Package: HW5VB
 Type: Package
 Title: Creates two functions to get samples from user selected distribution or plot user selected distributions.
 Version: 0.1.0
-Author: Victor Brew
-Maintainer: vb0391a@american.edu
+Authors@R: person("Victor", "Brew", email = "vb0391a@american.edu",
+                  role = c("aut", "cre")
 Description: This package is for homework assignment 4 in Dr. Resslers Stat 613 class for the data science masters program.
 License: MIT + file LICENSE
 Encoding: UTF-8
