@@ -1,15 +1,20 @@
 Package: HW5VB
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Creates two functions to get samples from user selected distribution or plot user selected distributions.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Victor Brew
+Maintainer: vb0391a@american.edu
+Description: This package is for homework assignment 4 in Dr. Resslers Stat 613 class for the data science masters program.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 
-    spelling
+    spelling,
+    knitr,
+    rmarkdown,
+    testthat
 Language: en-US
 RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+Imports: 
+    base

@@ -2,53 +2,53 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # HW5VB
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of HW5VB is to ...
+The goal of HW5VB is to load two functions: one that generates a random
+sample from 4 different distributions, and another that generates a plot
+of histograms from a random sample from 4 different distributions.
 
 ## Installation
 
-You can install the released version of HW5VB from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of HW5VB from
+[CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("HW5VB")
 ```
 
-## Example
+And the development version from [GitHub](https://github.com/) with:
 
-This is a basic example which shows you how to solve a common problem:
+``` r
+# install.packages("devtools")
+devtools::install_github("Vbrewski/HW5-Package-VB")
+```
 
-```{r example}
+## Usage
+
+This is a basic example of the RDistribution() function which returns
+the generated random samples from a selection of 4 different
+distributions.
+
+``` r
 library(HW5VB)
-## basic example code
+RDistribution('normal', 10)
+#>  [1]  1.2342407 -2.1890781  1.5339851  0.8036159 -0.7185504  0.7511472
+#>  [7] -1.4721635  1.2825279 -0.9829344 -0.3792187
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+This is a basic example of the RDistributionPlot() function which returns
+a histogram of the generated random samples from a selection of 4
+different user selected distributions.
 
-```{r cars}
-summary(cars)
+``` r
+RDistributionPlot('normal', 10, bins = 5)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
