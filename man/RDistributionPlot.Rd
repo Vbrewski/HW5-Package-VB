@@ -15,10 +15,12 @@ RDistributionPlot(
   size = 10,
   p = 0.1,
   seed = FALSE,
-  bins = 10
+  bins = 15
 )
 }
 \arguments{
+\item{x}{name of the distribution (normal, t, F, Binomial)}
+
 \item{n}{number of samples}
 
 \item{mean}{vector of means for normal distribution}
@@ -51,8 +53,6 @@ RDistributionPlot(
 
 In the last three cases the number is a suggestion only; as the breakpoints will be set to pretty values, the number is limited to 1e6 (with a warning if it was larger). If breaks is a function, the x vector is supplied to it as the only argument (and the number of breaks is only limited by the amount of available memory). freq
 logical; if TRUE, the histogram graphic is a representation of frequencies, the counts component of the result; if FALSE, probability densities, component density, are plotted (so that the histogram has a total area of one). Defaults to TRUE if and only if breaks are equidistant (and probability is not specified)}
-
-\item{dname}{name of the distribution (normal, t, F, Binomial)}
 }
 \value{
 
